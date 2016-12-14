@@ -18,9 +18,24 @@
     <input type="color" name="base" value="#ffc600">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="random image">
 
   <style>
+    :root {
+      --base:#ffc600;
+      --spacing:10px;
+      --blur:10px;
+    }
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base);
+    }
 
     /*
       misc styles, nothing to do with CSS variables
@@ -47,8 +62,7 @@
     }
   </style>
 
-  <script>
-  </script>
+  <script type="text/javascript" src="js.js"></script>
 
 </body>
 </html>
